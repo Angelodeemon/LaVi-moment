@@ -1,0 +1,337 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6796611" data-tilda-page-id="35334914" data-tilda-formskey="f43bfbc17b959a12d3cfcaaba6796611" data-tilda-lazy="yes"><div id="rec573342325" class="r t-rec" style=" " data-animationappear="off" data-record-type="230" ><div id="nav573342325" class="t199__header t199__js__header " style="" data-menu="yes"><div class="t199__holder"><a class="t199__logo" href="" style=""><div class="t199__logo-text t-title" field="title" style="">LaVi</div><div class="t199__logo-text-mobile t-title" field="title" style="">LaVi</div> </a><a class="t199__mmenu-toggler t199__js__menu-toggler" href="#"><div class="t-menuburger t-menuburger_first "><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('573342325');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </a><div class="t199__mmenu t199__js__menu"><nav class="t199__menu" 
+aria-label="Основные разделы на странице"><ul class="t199__menu-items" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href="/"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>About</a></li><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href="/"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>Works</a></li><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href="/"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>Contacts</a></li></ul></nav><div class="t199__lang"><a class="t199__lang-item" style="opacity: 0.5; font-weight:300;" href="">En</a><a class="t199__lang-item" style="" href="http://tilda.cc">Ru</a></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t199_showMenu', function () {
+t199_showMenu('573342325');
+});
+t_onFuncLoad('t199_positionHeader', function () {
+t199_positionHeader('573342325');
+});
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks(".t199__menu-item");
+});
+t_onFuncLoad('t_menu__findAnchorLinks', function () {
+t_menu__findAnchorLinks('573342325', '.t199__menu-item');
+});
+});</script><style>@media screen and (max-width: 1024px) {
+}</style><style>#rec573342325 .t-menu__link-item{
+outline: none;
+}
+#rec573342325 .t-menu__link-item:focus-visible{
+outline: 5px auto rgba(0, 150, 255, 1);
+-webkit-outline: 5px auto rgba(0, 150, 255, 1);
+-moz-outline: 5px auto rgba(0, 150, 255, 1);
+-ms-outline: 5px auto rgba(0, 150, 255, 1);
+-o-outline: 5px auto rgba(0, 150, 255, 1);
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec573342325 .t-menu__link-item,
+#rec573342325 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style></div><div id="rec570931750" class="r t-rec t-rec_pt_75 t-rec_pb_75" style="padding-top:75px;padding-bottom:75px; " data-animationappear="off" data-record-type="363" ><!-- T029 --><div class="t029"><div class="t029__container t-container"><div class="t029__col t-col t-col_8"><div class="t029__linewrapper" style="opacity:1;"><div class="t029__opacity t029__opacity_left" style="background-image: -moz-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -webkit-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -o-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -ms-linear-gradient(right, #000000, rgba(0,0,0,0));"></div><div class="t029__line" style="background: #000000;"></div><div class="t029__opacity t029__opacity_right" style="background-image: -moz-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -webkit-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -o-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -ms-linear-gradient(left, #000000, rgba(0,0,0,0));"></div></div></div></div></div></div><div id="rec570931751" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-animationappear="off" data-record-type="33" ><!-- T017 --><div class="t017"><div class="t-container t-align_center"><div class="t-col t-col_10 t-prefix_1"> <div class="t017__uptitle t-uptitle t-uptitle_md" field="subtitle" style="">BODY</div> <div class="t017__title t-title t-title_xxs" field="title" style=""><div style="font-size:62px;" data-customstyle="yes">The respiratory system<span style="font-size: 24px;"></span></div></div> </div></div></div></div><div id="rec573351977" class="r t-rec t-rec_pt_60 t-rec_pb_75" style="padding-top:60px;padding-bottom:75px; " data-animationappear="off" data-record-type="3" ><!-- T107 --><div class="t107"><div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3737-3731-4939-a565-333135376536__noroot.png"> <img class="t107__widthauto t-img" 
+src="images/tild3737-3731-4939-a565-333135376536__-__empty__noroot.png" data-original="images/tild3737-3731-4939-a565-333135376536__noroot.png" 
+imgfield="img"
+alt=""></div></div></div><div id="rec570931752" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 22px; line-height: 38px;" data-customstyle="yes"><strong>The respiratory system</strong> is represented by a number of anatomical entities. Classically, they are divided into airways (upper and lower) and respiratory organs. The upper airways are the nasal cavity, nasal and oral parts of the pharynx. The lower ones are the larynx, trachea, and bronchi. The respiratory organs include the lungs. In common parlance and in fact, when talking about the human respiratory organs, separate anatomical formations and respiratory tracts may be meant. For example, the larynx, the trachea are not only part of the lower respiratory tract, but also independent organs.<br /><ul><li>Air enters the lungs not by itself, it must be "sucked in", which occurs in the process of inhalation. This involves the diaphragm, the external intercostal and intercartilaginous muscles. During inhalation the diaphragm flattens somewhat, the thorax expands, which provides progressive movement of air into the airways and lungs.</li><li>Having passed all the way from nostrils to the final branches of bronchial tree, air gets into closed "bubbles" — alveoli. They are the main functional part of the lungs.</li><li>But how does oxygen reach its final destination — the organs? The outside of the alveolus is covered by a network of small blood vessels, through which blood flows continuously. One type of blood cell is the red blood cell, filled with the substance hemoglobin. It is this substance that carries the gases in the body.</li><li>Oxygen from the alveolar air "seeps" into the blood, where it is "captured" by hemoglobin. At the same time, carbon dioxide, a product of cellular activity, enters the alveolus. The oxygen-enriched red blood cells carry it around the body, and the carbon dioxide is released into the external environment by exhalation. Unlike breathing in — always an active process — exhalation is passive, but can also be active if necessary. Active exhalation also involves muscles — internal intercostal and abdominal wall muscles.</li><li>Negative intrapleural pressure plays a certain role in the breathing process.</li><li>The human breathing process is complex and regulated in various ways.</li><li>The respiratory center, a cluster of nerve cells in the medulla oblongata, is responsible for breathing.</li><li>The flow of nerve impulses goes to the muscles responsible for breathing, giving them a certain range of motion. The respiratory center has an automatism: about once every four seconds there is excitation, which stimulates the muscles that provide a breath. Then it is replaced by inhibition, the muscles of inhalation relax - there is an exhalation. Rhythmic change of these states - an innate property.</li><li>The frequency and depth of breathing depends on the intensity of oxidation processes occurring in the body. Physical activity leads to increased oxygen uptake and increased concentration of carbon dioxide in tissues and blood. The latter activates the respiratory center through the blood, and, as a consequence, the contraction of respiratory muscles is intensified. This allows faster removal of excess carbon dioxide and make up for the lack of oxygen.</li></ul>Humans were formed in an environment with a certain amount of oxygen. For optimal breathing, however, it is not only the presence of oxygen, but also certain characteristics of the air we breathe in. These are provided by our respiratory tracts, so the lungs, normally, receive purified, humidified and warmed air.</div></div></div></div></div></div><div id="rec570931753" class="r t-rec t-rec_pt_60 t-rec_pb_60" style="padding-top:60px;padding-bottom:60px; " data-animationappear="off" data-record-type="223" ><!-- T195 --><div class="t195"><div class="t-container"><div class="t-col t-col_4 t-prefix_2"><div class="t195__text t-text t-text_md" style="" field="text"><div style="font-size: 22px; line-height: 38px;" data-customstyle="yes"><strong style="font-size: 26px;"><u>Organs of the respiratory system</u>:</strong><br /><strong style="font-size: 24px;">1.</strong> Nasal cavity<br /><strong style="font-size: 24px;">2.</strong> Larynx<br /><strong style="font-size: 24px;">3.</strong> Alveoli<br /><strong style="font-size: 24px;">4.</strong> Nasopharynx<br /><strong style="font-size: 24px;">5.</strong> Trachea<br /><strong style="font-size: 24px;">6.</strong> Bronchi<br /><strong style="font-size: 24px;">7.</strong> Lungs<br /><strong style="font-size: 24px;">8.</strong> Diaphragm</div></div></div><div class="t-col t-col_6 t195__imgsection" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3038-6136-4565-a666-336539343766__noroot.png"> <img class="t195__img t-img" 
+src="images/tild3038-6136-4565-a666-336539343766__-__empty__noroot.png" data-original="images/tild3038-6136-4565-a666-336539343766__noroot.png" 
+imgfield="img" data-tu-max-width="1200" data-tu-max-height="1200"
+alt=""><br /><div class="t195__sectitle t-descr" style="" field="imgtitle" itemprop="name"></div><div class="t195__secdescr t-descr" style="" field="imgdescr" itemprop="description"></div></div></div></div></div></div><!--/allrecords-->

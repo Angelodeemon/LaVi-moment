@@ -1,0 +1,352 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6796611" data-tilda-page-id="35254210" data-tilda-formskey="f43bfbc17b959a12d3cfcaaba6796611" data-tilda-lazy="yes"><div id="rec569599165" class="r t-rec" style=" " data-animationappear="off" data-record-type="230" ><div id="nav569599165" class="t199__header t199__js__header " style="" data-menu="yes"><div class="t199__holder"><a class="t199__logo" href="" style=""><div class="t199__logo-text t-title" field="title" style="">LaVi</div><div class="t199__logo-text-mobile t-title" field="title" style="">LaVi</div> </a><a class="t199__mmenu-toggler t199__js__menu-toggler" href="#"><div class="t-menuburger t-menuburger_first "><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('569599165');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </a><div class="t199__mmenu t199__js__menu"><nav class="t199__menu" 
+aria-label="Основные разделы на странице"><ul class="t199__menu-items" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href="/"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>About</a></li><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href="/"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>Works</a></li><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href="/"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>Contacts</a></li></ul></nav><div class="t199__lang"><a class="t199__lang-item" style="opacity: 0.5; font-weight:300;" href="">En</a><a class="t199__lang-item" style="" href="http://tilda.cc">Ru</a></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t199_showMenu', function () {
+t199_showMenu('569599165');
+});
+t_onFuncLoad('t199_positionHeader', function () {
+t199_positionHeader('569599165');
+});
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks(".t199__menu-item");
+});
+t_onFuncLoad('t_menu__findAnchorLinks', function () {
+t_menu__findAnchorLinks('569599165', '.t199__menu-item');
+});
+});</script><style>@media screen and (max-width: 1024px) {
+}</style><style>#rec569599165 .t-menu__link-item{
+outline: none;
+}
+#rec569599165 .t-menu__link-item:focus-visible{
+outline: 5px auto rgba(0, 150, 255, 1);
+-webkit-outline: 5px auto rgba(0, 150, 255, 1);
+-moz-outline: 5px auto rgba(0, 150, 255, 1);
+-ms-outline: 5px auto rgba(0, 150, 255, 1);
+-o-outline: 5px auto rgba(0, 150, 255, 1);
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec569599165 .t-menu__link-item,
+#rec569599165 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style></div><div id="rec569599166" class="r t-rec t-rec_pt_75 t-rec_pb_75" style="padding-top:75px;padding-bottom:75px; " data-animationappear="off" data-record-type="363" ><!-- T029 --><div class="t029"><div class="t029__container t-container"><div class="t029__col t-col t-col_8"><div class="t029__linewrapper" style="opacity:1;"><div class="t029__opacity t029__opacity_left" style="background-image: -moz-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -webkit-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -o-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -ms-linear-gradient(right, #000000, rgba(0,0,0,0));"></div><div class="t029__line" style="background: #000000;"></div><div class="t029__opacity t029__opacity_right" style="background-image: -moz-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -webkit-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -o-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -ms-linear-gradient(left, #000000, rgba(0,0,0,0));"></div></div></div></div></div></div><div id="rec569599167" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-animationappear="off" data-record-type="33" ><!-- T017 --><div class="t017"><div class="t-container t-align_center"><div class="t-col t-col_10 t-prefix_1"> <div class="t017__uptitle t-uptitle t-uptitle_md" field="subtitle" style="">ЗДОРОВЬЕ</div> <div class="t017__title t-title t-title_xxs" field="title" style=""><div style="font-size: 62px;" data-customstyle="yes"><p style="text-align: center;">Гигиена&nbsp; в жизни человека</p></div></div> </div></div></div></div><div id="rec569599168" class="r t-rec t-rec_pt_60 t-rec_pb_75" style="padding-top:60px;padding-bottom:75px; " data-animationappear="off" data-record-type="3" ><!-- T107 --><div class="t107"><div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3435-3963-4031-a533-306537646238__noroot.png"> <img class="t107__width t-width t-width_12 t-img" 
+src="images/tild3435-3963-4031-a533-306537646238__-__empty__noroot.png" data-original="images/tild3435-3963-4031-a533-306537646238__noroot.png" 
+imgfield="img"
+alt=""></div></div></div><div id="rec569599169" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="260" ><!-- T231 --><div class="t231"><div class="t231__twrapper" style=""><div class="t231__tcoll" style="border:3px solid #000000;"><div class="t231__title" field="title" style="color:#000000;padding-top:15px;padding-bottom:15px;padding-left:30px;padding-right:30px;"><div style="font-size: 32px;" data-customstyle="yes"><strong>Коротко о главном</strong></div></div></div></div></div></div><div id="rec569599170" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 32px; line-height: 44px;" data-customstyle="yes"><p style="text-align: center;">С детства нам постоянно говорят, насколько важно мыть руки, лицо, правильно чистить зубы и так далее. Это правда, потому что гигиена - это ключ к здоровому телу.</p></div></div></div></div></div></div><div id="rec569599171" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="147" ><!-- t214--><div class="t214"><div class="t-container"><div class="t-row"> <div class="t214__col t-col t-col_4" style="margin-bottom:20px;" itemscope itemtype="http://schema.org/ImageObject"><div class="t214__blockimg t-bgimg" data-original="images/tild3530-6265-4361-a562-386136313934__photo.jpg" 
+bgimgfield="gi_img__0" data-zoom-target="0"
+title="" 
+style="background: url('images/tild3530-6265-4361-a562-386136313934__-__resizeb__20x__photo.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3530-6265-4361-a562-386136313934__photo.jpg"></div><div class="t214__textwrapper t-align_left"><div class="t214__title t-name t-name_sm" data-redactor-toolbar="no" field="gi_title__0" itemprop="name"></div><div class="t214__descr t-text" data-redactor-toolbar="no" field="gi_descr__0" itemprop="description"></div></div></div><div class="t214__col t-col t-col_4" style="margin-bottom:20px;" itemscope itemtype="http://schema.org/ImageObject"><div class="t214__blockimg t-bgimg" data-original="images/tild6435-3036-4562-b135-343739343238__photo.jpg" 
+bgimgfield="gi_img__1" data-zoom-target="1"
+title="" 
+style="background: url('images/tild6435-3036-4562-b135-343739343238__-__resizeb__20x__photo.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6435-3036-4562-b135-343739343238__photo.jpg"></div><div class="t214__textwrapper t-align_left"><div class="t214__title t-name t-name_sm" data-redactor-toolbar="no" field="gi_title__1" itemprop="name"></div><div class="t214__descr t-text" data-redactor-toolbar="no" field="gi_descr__1" itemprop="description"></div></div></div><div class="t214__col t-col t-col_4" style="margin-bottom:20px;" itemscope itemtype="http://schema.org/ImageObject"><div class="t214__blockimg t-bgimg" data-original="images/tild3637-3438-4963-a539-343162633862__photo.jpeg" 
+bgimgfield="gi_img__2" data-zoom-target="2"
+title="" 
+style="background: url('images/tild3637-3438-4963-a539-343162633862__-__resizeb__20x__photo.jpeg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3637-3438-4963-a539-343162633862__photo.jpeg"></div><div class="t214__textwrapper t-align_left"><div class="t214__title t-name t-name_sm" data-redactor-toolbar="no" field="gi_title__2" itemprop="name"></div><div class="t214__descr t-text" data-redactor-toolbar="no" field="gi_descr__2" itemprop="description"></div></div></div></div><div class="t-row"> </div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t214__updateLazyLoad', function () {
+setTimeout(function(){
+t214__updateLazyLoad('569599171');
+}, 500);
+});
+});</script></div><div id="rec569599172" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 30px; line-height: 30px;" data-customstyle="yes"><p style="text-align: center;"><strong style="color: rgb(110, 230, 192);">Полезные привычки</strong></p></div></div></div></div></div></div><div id="rec569599173" class="r t-rec t-rec_pt_15 t-rec_pb_0" style="padding-top:15px;padding-bottom:0px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 22px; line-height: 38px;" data-customstyle="yes">Для поддержания здоровья кожи необходима ее постоянная очистка и закаливание. Чистота кожи является главным условием ее нормального состояния. В поверхностном слое кожи, эпидермисе, находится большое количество потовых желез и волосяных фолликул, в которых задерживается пыль, грязь и бактерии. Кроме того, продукты обмена веществ, выделяемые самой кожей (жир, пот, ороговевшие чешуйки), постоянно накапливаются там. Все это необходимо систематически смывать.<br />Необходимо мыть кожу, учитывая ее индивидуальные особенности. Так, для нормальной и жирной кожи рекомендуется использовать нейтральное туалетное мыло для мытья, а для сухой кожи — косметическое, глицериновое и т.д. Рекомендуется принимать ванну и душ как минимум один раз в неделю при нормальных условиях, а в экологически неблагоприятных условиях — ежедневно.</div></div></div></div></div></div><div id="rec569599174" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 24px; line-height: 38px;" data-customstyle="yes"><p style="text-align: left;"><strong style="color: rgb(247, 5, 5); font-size: 26px;">! </strong>Кожу лица и шеи следует мыть утром, вечером и при необходимости (потоотделение, загрязнение)</p><p style="text-align: left;"><strong style="color: rgb(247, 5, 5); font-size: 28px;">!</strong><strong style="color: rgb(247, 5, 5);"> </strong>Кожу рук необходимо мыть с мылом и водой при комнатной температуре перед каждым приемом пищи, после посещения туалета, занятий спортом и нахождения на улице</p><p style="text-align: left;"><strong style="color: rgb(247, 5, 5); font-size: 28px;">!</strong> Рекомендуется мыть кожу ног каждый вечер после рабочего дня</p></div></div></div></div></div></div><div id="rec569599175" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 30px; line-height: 30px;" data-customstyle="yes"><p style="text-align: center;"><strong style="color: rgb(110, 230, 192);">Гигиена полости рта</strong></p></div></div></div></div></div></div><div id="rec569599176" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 22px; line-height: 38px;" data-customstyle="yes">Уход за полостью рта в первую очередь заключается в поддержании здоровья зубов. Когда он недостаточен, могут развиваться заболевания зубов. Одним из них является кариес. Главной причиной его появления считается деструктивное воздействие микроорганизмов на твердые ткани зубов.<br /><br />Вы можете предотвратить кариес, регулярно чистя зубы. Необходимо чистить их после завтрака и особенно тщательно (не менее 3 минут) после обеда. Это следует делать щеткой с искусственными щетинами.<br /><br />В промежутках между приемами пищи и перед сном (после чистки зубов) следует избегать потребления сладостей и крахмальных продуктов. Необходимо стремиться к тому, чтобы зубы всегда были очищены от остатков пищи (чистить зубы после завтрака и обеда, прополаскивать рот после любого приема пищи). Для предотвращения заболеваний рекомендуется посещать стоматолога не менее двух раз в год.<br /><br /></div></div></div></div></div></div><div id="rec569599177" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 30px; line-height: 30px;" data-customstyle="yes"><p style="text-align: center;"><strong style="color: rgb(110, 230, 192);">Гигиена волос</strong></p></div></div></div></div></div></div><div id="rec569599178" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 22px; line-height: 38px;" data-customstyle="yes"><p style="text-align: left;"><span style="font-size: 22px;">Общие рекомендации о том, чем полезно мыть голову, подразумевают использование питательных шампуней (например, на основе масел), бальзамов, масок, несмываемых кремов или спреев. Можно делать домашние обертывания с масляными компонентами непосредственно перед мытьем. </span></p><br /><p style="text-align: left;"><span style="font-size: 22px;">Особое внимание стоит уделять секущимся кончикам. Важно беречь локоны от вредного внешнего воздействия. Не стоит находиться под палящим солнцем без головного убора, равно как и в морозную погоду пренебрегать теплой зимней шапкой. Для окрашивания необходимо выбирать составы без аммиака.</span></p><br /><p style="text-align: left;"><span style="font-size: 22px;">Для того чтобы добиться здоровых, густых, блестящих локонов без ломкости и сечения, необходимо придерживаться общих рекомендаций, которые</span></p><p style="text-align: left;"><span style="font-size: 22px;">помогут предупредить множество проблем:</span></p><ul><li style="text-align: left;">Использовать подходящие шампуни и кондиционеры</li><li style="text-align: left;">Отдавать приоритет расческам с зубцами, изготовленными из натуральных материалов</li><li style="text-align: left;">Не пренебрегать регулярным нанесением масок на всю длину;</li><li style="text-align: left;">Стараться реже пользоваться термическими электроприборами;</li><li style="text-align: left;">Своевременно проходить лечение кожных заболеваний, в том числе избавляться от перхоти</li><li style="text-align: left;">Периодически подстригать кончики</li><li style="text-align: left;">Расчесываться не сразу после мытья, нужно дать волоскам немного подсохнуть естественным способом</li></ul></div></div></div></div></div></div><div id="rec569895148" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 22px; line-height: 38px;" data-customstyle="yes"><p style="text-align: left;"><strong style="font-size: 24px;"><u>Нормальный тип волос</u>:</strong></p><p style="text-align: left;">Как правило, в таком случае голова становится грязной только через 2-3 дня. Расчесывание не приносит особых трудностей, сечение кончиков тоже беспокоит крайне редко. Уход несложен, укладывать и оформлять локоны в прическу также просто. Обычно такая картина характерна для молодых девушек, не имеющих вредных привычек и ведущих в целом здоровый образ жизни.</p><p style="text-align: left;">Гигиена подразумевает регулярное применение шампуня, бальзама, маски и периодический прием витаминно-минеральных комплексов. Если пренебрегать этими простыми правилами, состояние волосяного покрова очень скоро значительно ухудшится, и придется прибегать к более серьезным методам восстановления.</p></div></div></div></div></div></div><div id="rec569893556" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="line-height: 38px;" data-customstyle="yes"><strong style="font-size: 24px;"><u>Сухой тип волос</u>:</strong><br /><span style="font-size: 22px;">Ухаживать за такими волосами несколько сложнее, чем в предыдущем случае. Следует отнестись к уходовым процедурам деликатно и бережно,</span><br /><span style="font-size: 22px;">чтобы предотвратить:</span><br /><ul><li><span style="font-size: 22px;">Тусклость, отсутствие блеска</span></li><li><span style="font-size: 22px;">Ломкость, хрупкость</span></li><li><span style="font-size: 22px;">Трудности с расчесыванием</span></li><li><span style="font-size: 22px;">Запутывание</span></li><li><span style="font-size: 22px;">Сечение концов</span></li><li><span style="font-size: 22px;">Периодическое появление перхоти</span></li></ul></div></div></div></div></div></div><div id="rec569900247" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="line-height: 38px;" data-customstyle="yes"><strong style="font-size: 24px; background-color: transparent;"><u>Жирный тип волос</u>:</strong><br /><span style="font-size: 22px; background-color: transparent;">Его обладатели порой испытывают сильный дискомфорт, поскольку усиленно работающие сальные железы быстро портят внешний вид</span><br /><span style="font-size: 22px;">локонов. Они кажутся немытыми, блестят, плотные на ощупь, эластичные и плохо укладываются. В данном случае ключевую роль играют не только последовательные этапы правильного ухода за кожей головы и волосами, но и качество рациона питания (нужно минимизировать соль, острое, жиры животного происхождения).</span></div></div></div></div></div></div><div id="rec569901305" class="r t-rec t-rec_pt_30 t-rec_pb_75" style="padding-top:30px;padding-bottom:75px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="line-height: 38px;" data-customstyle="yes"><strong style="font-size: 24px;"><u>Смешанный (комбинированный) тип волос</u>:</strong><br /><span style="font-size: 22px;">Процесс достаточно сложный, поскольку волоски при этом остаются у корней жирными, а у кончиков — ломкими, сухими. Гигиена должна быть комплексной и решать одновременно несколько задач: сократить интенсивность работы сальных желез и минимизировать последствия вредного воздействия на концы. Например, шампуни применяются преимущественно на корневую часть, а маски и бальзамы — на остальную длину.</span></div></div></div></div></div></div></div><!--/allrecords-->

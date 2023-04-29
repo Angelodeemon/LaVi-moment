@@ -1,0 +1,378 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6796611" data-tilda-page-id="35415136" data-tilda-formskey="f43bfbc17b959a12d3cfcaaba6796611" data-tilda-lazy="yes"><div id="rec572232043" class="r t-rec" style=" " data-animationappear="off" data-record-type="230" ><div id="nav572232043" class="t199__header t199__js__header " style="" data-menu="yes"><div class="t199__holder"><a class="t199__logo" href="" style=""><div class="t199__logo-text t-title" field="title" style="">LaVi</div><div class="t199__logo-text-mobile t-title" field="title" style="">LaVi</div> </a><a class="t199__mmenu-toggler t199__js__menu-toggler" href="#"><div class="t-menuburger t-menuburger_first "><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('572232043');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </a><div class="t199__mmenu t199__js__menu"><nav class="t199__menu" 
+aria-label="Основные разделы на странице"><ul class="t199__menu-items" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href=""
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>About</a></li><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href=""
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>Works</a></li><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href=""
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>Contacts</a></li></ul></nav><div class="t199__lang"><a class="t199__lang-item" style="opacity: 0.5; font-weight:300;" href="">En</a><a class="t199__lang-item" style="" href="http://tilda.cc">Ru</a></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t199_showMenu', function () {
+t199_showMenu('572232043');
+});
+t_onFuncLoad('t199_positionHeader', function () {
+t199_positionHeader('572232043');
+});
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks(".t199__menu-item");
+});
+t_onFuncLoad('t_menu__findAnchorLinks', function () {
+t_menu__findAnchorLinks('572232043', '.t199__menu-item');
+});
+});</script><style>@media screen and (max-width: 1024px) {
+}</style><style>#rec572232043 .t-menu__link-item{
+outline: none;
+}
+#rec572232043 .t-menu__link-item:focus-visible{
+outline: 5px auto rgba(0, 150, 255, 1);
+-webkit-outline: 5px auto rgba(0, 150, 255, 1);
+-moz-outline: 5px auto rgba(0, 150, 255, 1);
+-ms-outline: 5px auto rgba(0, 150, 255, 1);
+-o-outline: 5px auto rgba(0, 150, 255, 1);
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec572232043 .t-menu__link-item,
+#rec572232043 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style></div><div id="rec572232044" class="r t-rec t-rec_pt_60 t-rec_pb_75" style="padding-top:60px;padding-bottom:75px; " data-animationappear="off" data-record-type="92" ><!-- T081 --><div class="t081"><div class="t-container t-align_center"><div class="t081__col t-width t-width_6"><img class="t081__img t-img" 
+src="" 
+imgfield="img" data-tu-max-width="300" data-tu-max-height="300" data-tu-cover="c"
+alt=""><div class="t081__title t-name t-name_xl" style="" field="title">Astrakhantsev Roman</div><div class="t081__descr t-descr t-descr_xs" style="" field="descr">astrakhantsevroman@yandex.ru</div></div></div></div></div><div id="rec572232045" class="r t-rec t-rec_pt_0 t-rec_pb_30" style="padding-top:0px;padding-bottom:30px;background-color:#ffffff; " data-animationappear="off" data-record-type="844" data-bg-color="#ffffff"><!-- t844 --><div class="t844"><div class="t-section__container t-container"><div class="t-col t-col_12"><div class="t-section__topwrapper t-align_center"><div class="t-section__title t-title t-title_xs" field="btitle">Достижения</div> </div></div></div><div class="t844__container t-card__container t-container"><div class="t-card__col t-card__col_withoutbtn t844__col t-col t-col_4 t-align_center t-item"><img class="t844__img t-img" 
+src="images/tild3335-3366-4765-b533-313364633533__-__empty__photo.png" data-original="images/tild3335-3366-4765-b533-313364633533__photo.png" 
+imgfield="li_img__1531137250635"
+style="width:80px;" alt=""><div class="t844__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1531137250635" style="" ><a href="/page35321985.html" class="t-card__link">Заряжайся</a></div><div class="t-card__descr t-descr t-descr_sm" field="li_descr__1531137250635" style="" >Начинай своё утро правильно</div></div></div><div class="t-card__col t-card__col_withoutbtn t844__col t-col t-col_4 t-align_center t-item"><img class="t844__img t-img" 
+src="images/tild6634-3537-4465-b937-626466643638__-__empty__20.png" data-original="images/tild6634-3537-4465-b937-626466643638__20.png" 
+imgfield="li_img__1531137263951"
+style="width:80px;" alt=""><div class="t844__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1531137263951" style="" ><a href="/page34865276.html" class="t-card__link">Чистая миссия</a></div><div class="t-card__descr t-descr t-descr_sm" field="li_descr__1531137263951" style="" >А сколько лайфхаков знал ты?</div></div></div><div class="t-card__col t-card__col_withoutbtn t844__col t-col t-col_4 t-align_center t-item"><img class="t844__img t-img" 
+src="images/tild3230-3438-4330-b439-643833646661__-__empty__1.png" data-original="images/tild3230-3438-4330-b439-643833646661__1.png" 
+imgfield="li_img__1531137278040"
+style="width:80px;" alt=""><div class="t844__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1531137278040" style="" ><a href="/page34865724.html" class="t-card__link">Рецепт 007</a></div><div class="t-card__descr t-descr t-descr_sm" field="li_descr__1531137278040" style="" >Сможет приготовить даже ребенок</div></div></div><div class="t-clear t844__separator" style=""></div><div class="t-card__col t-card__col_withoutbtn t844__col t-col t-col_4 t-align_center t-item"><img class="t844__img t-img" 
+src="images/tild6333-6131-4535-a432-326264336538__-__empty__20.png" data-original="images/tild6333-6131-4535-a432-326264336538__20.png" 
+imgfield="li_img__1531137295061"
+style="width:80px;" alt=""><div class="t844__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1531137295061" style="" ><a href="/page34865026.html" class="t-card__link">Все в коробку</a></div><div class="t-card__descr t-descr t-descr_sm" field="li_descr__1531137295061" style="" >Будь в тренде, как чебурашка</div></div></div><div class="t-card__col t-card__col_withoutbtn t844__col t-col t-col_4 t-align_center t-item"><img class="t844__img t-img" 
+src="images/tild3533-6137-4634-a461-373139306663__-__empty__photo.png" data-original="images/tild3533-6137-4634-a461-373139306663__photo.png" 
+imgfield="li_img__1531137309241"
+style="width:80px;" alt=""><div class="t844__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1531137309241" style="" ><a href="/page34864949.html" class="t-card__link">Ручной доступ</a></div><div class="t-card__descr t-descr t-descr_sm" field="li_descr__1531137309241" style="" >Вам было разрешено мыть руки</div></div></div><div class="t-card__col t-card__col_withoutbtn t844__col t-col t-col_4 t-align_center t-item"><img class="t844__img t-img" 
+src="images/tild3137-3933-4038-a538-666633623334__-__empty__20.png" data-original="images/tild3137-3933-4038-a538-666633623334__20.png" 
+imgfield="li_img__1531137326480"
+style="width:80px;" alt=""><div class="t844__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1531137326480" style="" ><a href="/page35581034.html" class="t-card__link">ЗОЖ ннадо?</a></div><div class="t-card__descr t-descr t-descr_sm" field="li_descr__1531137326480" style="" >Вы насмешили выхухоль</div></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t844_init', function () {
+t844_init('572232045');
+});
+});</script></div><div id="rec572232046" class="r t-rec t-rec_pt_0 t-rec_pb_75" style="padding-top:0px;padding-bottom:75px;background-color:#ffffff; " data-animationappear="off" data-record-type="844" data-bg-color="#ffffff"><!-- t844 --><div class="t844"><div class="t844__container t-card__container t-container"><div class="t-card__col t-card__col_withoutbtn t844__col t-col t-col_4 t-align_center t-item"><img class="t844__img t-img" 
+src="images/tild3731-3763-4663-a364-383534383633__-__empty__photo.png" data-original="images/tild3731-3763-4663-a364-383534383633__photo.png" 
+imgfield="li_img__1531137250635"
+style="width:80px;" alt=""><div class="t844__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1531137250635" style="" ><a href="/page34863320.html" class="t-card__link">Водный удар</a></div><div class="t-card__descr t-descr t-descr_sm" field="li_descr__1531137250635" style="" >Удиви свой организм: попей воды</div></div></div><div class="t-card__col t-card__col_withoutbtn t844__col t-col t-col_4 t-align_center t-item"><img class="t844__img t-img" 
+src="images/tild3031-6361-4038-b134-623935356532__-__empty__photo.png" data-original="images/tild3031-6361-4038-b134-623935356532__photo.png" 
+imgfield="li_img__1531137263951"
+style="width:80px;" alt=""><div class="t844__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1531137263951" style="" ><a href="/page34862903.html" class="t-card__link">Кто не курит и не пьёт...</a></div><div class="t-card__descr t-descr t-descr_sm" field="li_descr__1531137263951" style="" >НЕ курю, где хочу!</div></div></div><div class="t-card__col t-card__col_withoutbtn t844__col t-col t-col_4 t-align_center t-item"><img class="t844__img t-img" 
+src="images/tild6434-6162-4264-b734-643233303165__-__empty__photo.png" data-original="images/tild6434-6162-4264-b734-643233303165__photo.png" 
+imgfield="li_img__1531137278040"
+style="width:80px;" alt=""><div class="t844__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1531137278040" style="" ><a href="/page34864372.html" class="t-card__link">Для креветок</a></div><div class="t-card__descr t-descr t-descr_sm" field="li_descr__1531137278040" style="" >Прямая спина — залог здоровья</div></div></div><div class="t-clear t844__separator" style=""></div><div class="t-card__col t-card__col_withoutbtn t844__col t-col t-col_4 t-align_center t-item"><img class="t844__img t-img" 
+src="images/tild3234-3130-4634-b531-313630623164__-__empty__20.png" data-original="images/tild3234-3130-4634-b531-313630623164__20.png" 
+imgfield="li_img__1531137295061"
+style="width:80px;" alt=""><div class="t844__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1531137295061" style="" ><a href="/page34903327.html" class="t-card__link">Можно воды?</a></div><div class="t-card__descr t-descr t-descr_sm" field="li_descr__1531137295061" style="" >Конечно, нужно!</div></div></div><div class="t-card__col t-card__col_withoutbtn t844__col t-col t-col_4 t-align_center t-item"><img class="t844__img t-img" 
+src="images/tild6366-3130-4563-a535-306532326235__-__empty__1.png" data-original="images/tild6366-3130-4563-a535-306532326235__1.png" 
+imgfield="li_img__1531137309241"
+style="width:80px;" alt=""><div class="t844__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1531137309241" style="" ><a href="/page35609571.html" class="t-card__link">Разноцветная призма</a></div><div class="t-card__descr t-descr t-descr_sm" field="li_descr__1531137309241" style="" >Какой твой любимый цвет?</div></div></div><div class="t-card__col t-card__col_withoutbtn t844__col t-col t-col_4 t-align_center t-item"><img class="t844__img t-img" 
+src="images/tild6132-3061-4430-a337-386234363563__-__empty__20.png" data-original="images/tild6132-3061-4430-a337-386234363563__20.png" 
+imgfield="li_img__1531137326480"
+style="width:80px;" alt=""><div class="t844__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1531137326480" style="" ><a href="/page35257988.html" class="t-card__link">Звучит, как тост</a></div><div class="t-card__descr t-descr t-descr_sm" field="li_descr__1531137326480" style="" >"Товарищи, за здоровую жизнь!"</div></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t844_init', function () {
+t844_init('572232046');
+});
+});</script></div></div><!--/allrecords-->

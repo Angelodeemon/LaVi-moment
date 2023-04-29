@@ -1,0 +1,353 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6796611" data-tilda-page-id="35239250" data-tilda-formskey="f43bfbc17b959a12d3cfcaaba6796611" data-tilda-lazy="yes"><div id="rec569358500" class="r t-rec" style=" " data-animationappear="off" data-record-type="230" ><div id="nav569358500" class="t199__header t199__js__header " style="" data-menu="yes"><div class="t199__holder"><a class="t199__logo" href="" style=""><div class="t199__logo-text t-title" field="title" style="">LaVi</div><div class="t199__logo-text-mobile t-title" field="title" style="">LaVi</div> </a><a class="t199__mmenu-toggler t199__js__menu-toggler" href="#"><div class="t-menuburger t-menuburger_first "><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('569358500');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </a><div class="t199__mmenu t199__js__menu"><nav class="t199__menu" 
+aria-label="Основные разделы на странице"><ul class="t199__menu-items" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href="/"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>About</a></li><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href="/"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>Works</a></li><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href="/"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>Contacts</a></li></ul></nav><div class="t199__lang"><a class="t199__lang-item" style="opacity: 0.5; font-weight:300;" href="">En</a><a class="t199__lang-item" style="" href="http://tilda.cc">Ru</a></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t199_showMenu', function () {
+t199_showMenu('569358500');
+});
+t_onFuncLoad('t199_positionHeader', function () {
+t199_positionHeader('569358500');
+});
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks(".t199__menu-item");
+});
+t_onFuncLoad('t_menu__findAnchorLinks', function () {
+t_menu__findAnchorLinks('569358500', '.t199__menu-item');
+});
+});</script><style>@media screen and (max-width: 1024px) {
+}</style><style>#rec569358500 .t-menu__link-item{
+outline: none;
+}
+#rec569358500 .t-menu__link-item:focus-visible{
+outline: 5px auto rgba(0, 150, 255, 1);
+-webkit-outline: 5px auto rgba(0, 150, 255, 1);
+-moz-outline: 5px auto rgba(0, 150, 255, 1);
+-ms-outline: 5px auto rgba(0, 150, 255, 1);
+-o-outline: 5px auto rgba(0, 150, 255, 1);
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec569358500 .t-menu__link-item,
+#rec569358500 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style></div><div id="rec569358501" class="r t-rec t-rec_pt_75 t-rec_pb_75" style="padding-top:75px;padding-bottom:75px; " data-animationappear="off" data-record-type="363" ><!-- T029 --><div class="t029"><div class="t029__container t-container"><div class="t029__col t-col t-col_8"><div class="t029__linewrapper" style="opacity:1;"><div class="t029__opacity t029__opacity_left" style="background-image: -moz-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -webkit-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -o-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -ms-linear-gradient(right, #000000, rgba(0,0,0,0));"></div><div class="t029__line" style="background: #000000;"></div><div class="t029__opacity t029__opacity_right" style="background-image: -moz-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -webkit-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -o-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -ms-linear-gradient(left, #000000, rgba(0,0,0,0));"></div></div></div></div></div></div><div id="rec569358502" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-animationappear="off" data-record-type="33" ><!-- T017 --><div class="t017"><div class="t-container t-align_center"><div class="t-col t-col_10 t-prefix_1"> <div class="t017__uptitle t-uptitle t-uptitle_md" field="subtitle" style="">ПИТАНИЕ</div> <div class="t017__title t-title t-title_xxs" field="title" style=""><div style="font-size: 62px; line-height: 64px;" data-customstyle="yes"><p style="text-align: center;">Значение питания в нашей жизни</p></div></div> </div></div></div></div><div id="rec569358503" class="r t-rec t-rec_pt_60 t-rec_pb_75" style="padding-top:60px;padding-bottom:75px; " data-animationappear="off" data-record-type="3" ><!-- T107 --><div class="t107"><div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6165-3561-4439-a331-643434303261__noroot.png"> <img class="t107__widthauto t-img" 
+src="images/tild6165-3561-4439-a331-643434303261__-__empty__noroot.png" data-original="images/tild6165-3561-4439-a331-643434303261__noroot.png" 
+imgfield="img"
+alt=""></div></div></div><div id="rec569358504" class="r t-rec t-rec_pt_0 t-rec_pb_30" style="padding-top:0px;padding-bottom:30px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 32px; line-height: 44px;" data-customstyle="yes"><p style="text-align: center;">Когда дети начинают ходить в школу, требования к их питанию меняются, потому что ученики испытывают довольно большую психологическую и умственную нагрузку. Кроме того, многие дети посещают спортивные секции. В то же время организм продолжает активно расти, поэтому достаточное внимание всегда следует уделять питанию в школьном возрасте. Мы дадим вам несколько советов, как это сделать, и поможем убедиться, что вы получаете все необходимые питательные вещества.</p></div></div></div></div></div></div><div id="rec569358505" class="r t-rec t-rec_pt_60 t-rec_pb_45" style="padding-top:60px;padding-bottom:45px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 36px;" data-customstyle="yes"><p style="text-align: center;"><strong style="color: rgb(110, 230, 192);">Следует обратить внимание на:</strong></p></div></div></div></div></div></div><div id="rec569358506" class="r t-rec t-rec_pt_75 t-rec_pb_75" style="padding-top:75px;padding-bottom:75px; " data-animationappear="off" data-record-type="1029" ><!-- t1029 --><div class="t1029"><div class="t-container t-card__container"><div class="t1029__row"><div class="t-card__col t-card__col_withoutbtn t1029__col t-col t-col_4 t-align_center t-item"><div class="t1029__bgimg t1029__img_circle t-margin_auto t-bgimg" 
+bgimgfield="li_img__1656427283527" data-original="images/tild6635-3365-4335-a662-383438643861__photo.png"
+style=" background-image: url('images/tild6635-3365-4335-a662-383438643861__-__resizeb__20x__photo.png');"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6635-3365-4335-a662-383438643861__photo.png"></div><div class="t1029__wrappercenter"><div class="t-card__title t-name t-name_xl" field="li_title__1656427283527" style="" ><div style="font-size: 26px;" data-customstyle="yes">Витамины</div></div><div class="t-card__descr t-text t-text1" field="li_text__1656427283527" style="" ><div style="font-size: 22px;" data-customstyle="yes">Обогащение организма и прямое влияние на здоровье, укрепление иммунной системы</div></div></div></div><div class="t-card__col t-card__col_withoutbtn t1029__col t-col t-col_4 t-align_center t-item"><div class="t1029__bgimg t1029__img_circle t-margin_auto t-bgimg" 
+bgimgfield="li_img__1655825402357" data-original="images/tild3565-3864-4632-b164-326461616565__photo.png"
+style=" background-image: url('images/tild3565-3864-4632-b164-326461616565__-__resizeb__20x__photo.png');"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3565-3864-4632-b164-326461616565__photo.png"></div><div class="t1029__wrappercenter"><div class="t-card__title t-name t-name_xl" field="li_title__1655825402357" style="" ><div style="font-size: 26px;" data-customstyle="yes">Расписание приема пищи</div></div><div class="t-card__descr t-text t-text1" field="li_text__1655825402357" style="" ><div style="font-size: 22px; line-height: 20px;" data-customstyle="yes">Осуществление визуальной коммуникации через картинки, графики и диаграммы</div></div></div></div><div class="t-card__col t-card__col_withoutbtn t1029__col t-col t-col_4 t-align_center t-item"><div class="t1029__bgimg t1029__img_circle t-margin_auto t-bgimg" 
+bgimgfield="li_img__1655825425270" data-original="images/tild6430-6532-4436-b665-653430326261__photo.png"
+style=" background-image: url('images/tild6430-6532-4436-b665-653430326261__-__resizeb__20x__photo.png');"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6430-6532-4436-b665-653430326261__photo.png"></div><div class="t1029__wrappercenter"><div class="t-card__title t-name t-name_xl" field="li_title__1655825425270" style="" ><div style="font-size: 26px;" data-customstyle="yes">Полезные привычки</div></div><div class="t-card__descr t-text t-text1" field="li_text__1655825425270" style="" ><div style="font-size: 22px;" data-customstyle="yes">Взгляд на привычные вещи в критической перспективе</div></div></div></div></div></div></div><script>t_onReady(function() {
+t_onFuncLoad('t1029_init', function () {
+t1029_init('569358506');
+});
+});</script></div><div id="rec569358507" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="260" ><!-- T231 --><div class="t231"><div class="t231__twrapper" style=""><div class="t231__tcoll" style="border:3px solid #000000;"><div class="t231__title" field="title" style="color:#000000;padding-top:15px;padding-bottom:15px;padding-left:30px;padding-right:30px;"><div style="font-size: 26px;" data-customstyle="yes">Витамины</div></div></div></div></div></div><div id="rec569358508" class="r t-rec t-rec_pt_0 t-rec_pb_30" style="padding-top:0px;padding-bottom:30px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 22px;" data-customstyle="yes"><strong>Витамин А</strong> — обеспечивает нормальное состояние слизистых оболочек и кожи, повышает сопротивляемость организма, отвечает за нормальное состояние зрения. Содержится в рыбе и морепродуктах, печени, абрикосах, моркови.<br /><br /><strong>Витамин В1</strong> — улучшает пищеварение, укрепляет нервную систему и память. Содержится в овощах, рисе, мясе птицы.<br /><br /><strong>Витамин В2</strong> — укрепляет ногти и волосы, и положительно влияет на состояние нервов. Содержится в яйцах, молоке, брокколи.<br /><br /><strong>Витамин В6</strong> — отвечает за нормальную функцию печени, улучшает кроветворение и благотворно влияет на работу нервной системы. Содержится в желтке яйца, пивных дрожжах, бобовых и цельных зернах.<br /><br /><strong>Витамин В12</strong> — стимулирует рост, способствует кроветворению, улучшает состояние центральной и периферической нервной системы. Содержится в мясе, сыре, морепродуктах.<br /><br /><strong>Витамин РР</strong> — регулирует уровень холестерина и улучшает кровообращение. Содержится в рыбе, мясе, орехах, овощах и цельном зерне.<br /><br /><strong>Пантотеновая кислота</strong> — благотворно влияет на функции нервной системы и кишечной подвижности. Содержится в желтке яиц, мясе, бобах, цветной капусте.<br /><br /><strong>Фолиевая кислота</strong> — необходима для роста и нормального образования крови. Это "зеленый" витамин, содержащийся в шпинате, зеленых горошках, кочанной капусте и других зеленых овощах.<br /><br /><strong>Биотин</strong> — отвечает за состояние кожи, ногтей и волос, регулирует уровень сахара в крови. Содержится в желтке яиц, коричневом рисе, соевых бобах и помидорах.<br /><br /><strong>Витамин C</strong> — полезен для иммунной системы, соединительной ткани и костей, ускоряет заживление ран. Содержится в шиповнике, облепихе, сладком перце, черной смородине, лимоне.<br /><br /><strong>Витамин D</strong> — укрепляет зубы и кости. Содержится в печени, икре, яйцах и молоке.<br /><br /><strong>Витамин Е</strong> — борется с разрушительными воздействиями свободных радикалов, влияет на функции эндокринной и репродуктивной систем, замедляет процессы старения. Содержится в орехах и растительных маслах.<br /><br /><strong>Витамин К</strong> — отвечает за нормальное свертывание крови. Содержится в шпинате, кабачках, салате и белокочанной капусте.</div></div></div></div></div></div><div id="rec569358509" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="260" ><!-- T231 --><div class="t231"><div class="t231__twrapper" style=""><div class="t231__tcoll" style="border:3px solid #000000;"><div class="t231__title" field="title" style="color:#000000;padding-top:15px;padding-bottom:15px;padding-left:30px;padding-right:30px;"><div style="font-size: 26px;" data-customstyle="yes"><span style="font-weight: 500;">Расписание приёма пищи</span></div></div></div></div></div></div><div id="rec569358510" class="r t-rec t-rec_pt_0 t-rec_pb_30" style="padding-top:0px;padding-bottom:30px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 22px;" data-customstyle="yes"><p style="text-align: left;"><strong style="font-size: 24px;">1.</strong><span style="font-size: 24px;"> </span>Редкие приемы пищи вредны так же, как постоянное перекусывание и привычка жевать что-то все время. Оптимально для здорового человека есть 4-5 раз в день, интервал между приемами пищи более 5 часов замедляет метаболизм и заставляет организм перейти в экономический режим. В результате начинают накапливаться жировые отложения. Попробуйте не перекусывать на работе или перед телевизором. Процесс потребления пищи в этом случае становится неконтролируемым, насыщение не наступает, а происходит переедание.</p><p style="text-align: left;"><strong style="font-size: 24px;">2.</strong><strong> </strong>Съедайте каждый день свежие овощи и фрукты. Рекомендуемое количество — 300 г каждого. Таким образом, вы получите все необходимые витамины и пищевые волокна. Очень удобно взять с собой на работу нарезанные яблоко или грушу, огуречные или морковные палочки.</p></div></div></div></div></div></div><div id="rec569358511" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 30px;" data-customstyle="yes"><p style="text-align: center;"><strong style="color: rgb(110, 230, 192);">Рекомендуемые продукты</strong></p></div></div></div></div></div></div><div id="rec569358512" class="r t-rec t-rec_pt_0 t-rec_pb_30" style="padding-top:0px;padding-bottom:30px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 22px; line-height: 38px;" data-customstyle="yes"><ul><li style="text-align: left;">Свежие ягоды, фрукты и овощи (витамин C, клетчатка)</li><li style="text-align: left;">Каши и крупы из них (витамины B, E, магний, калий, фолиевая кислота)</li><li style="text-align: left;">Сухофрукты и орехи (витамины, жирные кислоты, белок)</li><li style="text-align: left;">Мясо птицы (белок, аминокислоты, витамины A, B, E)</li><li style="text-align: left;">Рыба и морепродукты (белок, полиненасыщенные кислоты, витамины D, E, B12, кальций, фосфор)</li><li style="text-align: left;">Молочные продукты: сметана, творог, йогурт (кальций, белок, аминокислоты, витамины D, A, B12, углеводы)</li><li style="text-align: left;">Зеленый чай (витамины, минералы, полифенолы)</li><li style="text-align: left;">Холоднопрессованные растительные масла (фосфолипиды, линолевая и другие полиненасыщенные кислоты, витамины A, D, E)</li><li style="text-align: left;">Мед (витамины, микроэлементы, глюкоза, фруктоза, фитонциды, быстрые углеводы).</li><li style="text-align: left;">Хлеб из зерна (клетчатка, ферменты, аминокислоты)</li></ul></div></div></div></div></div></div><div id="rec569358513" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 30px;" data-customstyle="yes"><p style="text-align: center;"><strong style="color: rgb(110, 230, 192);">Вредные продукты</strong></p></div></div></div></div></div></div><div id="rec569358514" class="r t-rec t-rec_pt_0 t-rec_pb_30" style="padding-top:0px;padding-bottom:30px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 22px; line-height: 38px;" data-customstyle="yes"><ul><li style="text-align: left;">Чипсы, попкорн, крекеры, соленые орехи</li><li style="text-align: left;">Алкогольные напитки</li><li style="text-align: left;">Любые полуфабрикаты и концентраты: сухое пюре, лапша быстрого приготовления и т.д.</li><li style="text-align: left;">Сладкие выпечки, особенно те, которые содержат большое количество сахара</li><li style="text-align: left;">Жареные блюда</li><li style="text-align: left;">Готовые фабричные соусы, включая майонез</li><li style="text-align: left;">Копченые продукты, колбасы</li><li style="text-align: left;">Сладости</li><li style="text-align: left;">Соки (кроме свежевыжатых), газированные напитки</li></ul></div></div></div></div></div></div><div id="rec569569912" class="r t-rec t-rec_pt_15 t-rec_pb_75" style="padding-top:15px;padding-bottom:75px; " data-record-type="3" ><!-- T107 --><div class="t107"><div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3565-3736-4466-b534-633635336630__hph_1.png"> <img class="t107__widthauto t-img" 
+src="images/tild3565-3736-4466-b534-633635336630__-__empty__hph_1.png" data-original="images/tild3565-3736-4466-b534-633635336630__hph_1.png" 
+imgfield="img"
+alt=""></div></div></div><div id="rec569358516" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="260" ><!-- T231 --><div class="t231"><div class="t231__twrapper" style=""><div class="t231__tcoll" style="border:3px solid #000000;"><div class="t231__title" field="title" style="color:#000000;padding-top:15px;padding-bottom:15px;padding-left:30px;padding-right:30px;"><div style="font-size: 26px;" data-customstyle="yes"><span style="font-weight: 500;">Полезные привычки</span></div></div></div></div></div></div><div id="rec569358517" class="r t-rec t-rec_pt_0 t-rec_pb_30" style="padding-top:0px;padding-bottom:30px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 22px; line-height: 38px;" data-customstyle="yes"><p style="text-align: left;"><strong>Правило номер 1. </strong>Навсегда забудьте о фаст-фуде и старайтесь не переедать сладкое.</p><br /><p style="text-align: left;"><strong>Правило номер 2.</strong> Ешьте как можно больше сезонных продуктов - они содержат максимум питательных веществ. Овощи и фрукты зимой, выращенные в теплицах или привезенные издалека, из-за химической обработки и длительного хранения не только теряют все свои пользу, но и становятся накопителями нитратов и других вредных химических соединений.</p><br /><p style="text-align: left;"><strong>Правило номер 3.</strong> Ограничьте употребление рафинированных продуктов насколько это возможно: сахар, растительное масло, белая пшеничная мука, рафинированный белый рис. Они не содержат клетчатку, которая очень важна для функционирования пищеварительного тракта, а также для питания полезных бактерий, живущих в кишечнике. Поэтому гораздо лучше есть цельнозерновой хлеб вместо белого, и заменить рафинированный сахар на коричневый или даже мед.</p><br /><p style="text-align: left;"><strong>Правило номер 4.</strong> Пейте воду. Чай, кофе и соки не заменяют воду. Организму необходимо получать не менее 30–35 мл жидкости на 1 кг веса тела в день. Сладкие газированные напитки абсолютно запрещены, они содержат слишком много сахара.</p><br /><p style="text-align: left;"><strong>Правило номер 5.</strong> Не забывайте о белке. Он способен давать чувство сытости на долгое время и также богат аминокислотами. Белки необходимы организму для построения мышечной ткани, замены устаревших клеток. Белковые продукты включают в себя различные виды мяса, рыбу, кальмары, креветки, орехи, грибы, некоторые бобовые, яйца, творог.</p></div></div></div></div></div></div><div id="rec569358518" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-animationappear="off" data-record-type="3" ><!-- T107 --><div class="t107"><div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3232-3364-4233-a338-643531363138__noroot.png"> <img class="t107__widthauto t-img" 
+src="images/tild3232-3364-4233-a338-643531363138__-__empty__noroot.png" data-original="images/tild3232-3364-4233-a338-643531363138__noroot.png" 
+imgfield="img"
+alt=""></div></div></div><div id="rec569358519" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 30px;" data-customstyle="yes"><p style="text-align: center;"><strong style="color: rgb(110, 230, 192);">Образец приёма пищи на день</strong></p></div></div></div></div></div></div><div id="rec569358520" class="r t-rec t-rec_pt_0 t-rec_pb_75" style="padding-top:0px;padding-bottom:75px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 22px; line-height: 38px;" data-customstyle="yes"><p style="text-align: left;"><strong>Завтрак:</strong> яичница с шампиньонами из одного целого яйца и двух белков, ломтик цельнозернового хлеба, цикорий с кремом - 384 ккал, 25 г белков, 19 г жиров и 26 г углеводов.</p><br /><p style="text-align: left;"><strong>Перекус:</strong> один банан и четверть плитки темного шоколада - 220 ккал, 4 г белков, 12 г жиров, 28 г углеводов.</p><br /><p style="text-align: left;"><strong>Обед: </strong>овощной салат и суп из брокколи с курицей и сливками - 327 ккал, 30 г белков, 14 г жиров, 21 г углеводов.</p><br /><p style="text-align: left;"><strong>Полдник:</strong> две мандарины и одно яблоко - 174 ккал, 40 г углеводов, витамин C.</p><br /><p style="text-align: left;"><strong>Ужин:</strong> треска, запеченная с тушеными овощами - 288 ккал, 32 г белков, 5 г жиров, 3 г углеводов.</p><br /><p style="text-align: left;"><strong>Перед сном:</strong> стакан кефира - 76 ккал, 6 г белков, 2 г жиров и 8 г углеводов.</p><p style="text-align: left;">С таким меню общее количество калорий за день составит 1470 ккал, белки - 98 г, жиры - 53 г, углеводы - 153 г. Кроме того, продукты, входящие в блюда, содержат все необходимые витамины и микроэлементы.</p></div></div></div></div></div></div></div><!--/allrecords-->

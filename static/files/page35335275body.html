@@ -1,0 +1,337 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6796611" data-tilda-page-id="35335275" data-tilda-formskey="f43bfbc17b959a12d3cfcaaba6796611" data-tilda-lazy="yes"><div id="rec573342725" class="r t-rec" style=" " data-animationappear="off" data-record-type="230" ><div id="nav573342725" class="t199__header t199__js__header " style="" data-menu="yes"><div class="t199__holder"><a class="t199__logo" href="" style=""><div class="t199__logo-text t-title" field="title" style="">LaVi</div><div class="t199__logo-text-mobile t-title" field="title" style="">LaVi</div> </a><a class="t199__mmenu-toggler t199__js__menu-toggler" href="#"><div class="t-menuburger t-menuburger_first "><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('573342725');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </a><div class="t199__mmenu t199__js__menu"><nav class="t199__menu" 
+aria-label="Основные разделы на странице"><ul class="t199__menu-items" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href="/"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>About</a></li><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href="/"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>Works</a></li><li class="t199__menu-item-wrap" role="none"><a class="t199__menu-item t-title t-menu__link-item" 
+href="/"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" 
+>Contacts</a></li></ul></nav><div class="t199__lang"><a class="t199__lang-item" style="opacity: 0.5; font-weight:300;" href="">En</a><a class="t199__lang-item" style="" href="http://tilda.cc">Ru</a></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t199_showMenu', function () {
+t199_showMenu('573342725');
+});
+t_onFuncLoad('t199_positionHeader', function () {
+t199_positionHeader('573342725');
+});
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks(".t199__menu-item");
+});
+t_onFuncLoad('t_menu__findAnchorLinks', function () {
+t_menu__findAnchorLinks('573342725', '.t199__menu-item');
+});
+});</script><style>@media screen and (max-width: 1024px) {
+}</style><style>#rec573342725 .t-menu__link-item{
+outline: none;
+}
+#rec573342725 .t-menu__link-item:focus-visible{
+outline: 5px auto rgba(0, 150, 255, 1);
+-webkit-outline: 5px auto rgba(0, 150, 255, 1);
+-moz-outline: 5px auto rgba(0, 150, 255, 1);
+-ms-outline: 5px auto rgba(0, 150, 255, 1);
+-o-outline: 5px auto rgba(0, 150, 255, 1);
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec573342725 .t-menu__link-item,
+#rec573342725 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style></div><div id="rec570939279" class="r t-rec t-rec_pt_75 t-rec_pb_75" style="padding-top:75px;padding-bottom:75px; " data-animationappear="off" data-record-type="363" ><!-- T029 --><div class="t029"><div class="t029__container t-container"><div class="t029__col t-col t-col_8"><div class="t029__linewrapper" style="opacity:1;"><div class="t029__opacity t029__opacity_left" style="background-image: -moz-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -webkit-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -o-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -ms-linear-gradient(right, #000000, rgba(0,0,0,0));"></div><div class="t029__line" style="background: #000000;"></div><div class="t029__opacity t029__opacity_right" style="background-image: -moz-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -webkit-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -o-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -ms-linear-gradient(left, #000000, rgba(0,0,0,0));"></div></div></div></div></div></div><div id="rec570938708" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-animationappear="off" data-record-type="33" ><!-- T017 --><div class="t017"><div class="t-container t-align_center"><div class="t-col t-col_10 t-prefix_1"> <div class="t017__uptitle t-uptitle t-uptitle_md" field="subtitle" style="">ТЕЛО</div> <div class="t017__title t-title t-title_xxs" field="title" style=""><div style="font-size:62px;" data-customstyle="yes">Кровеносная система</div></div> </div></div></div></div><div id="rec573353000" class="r t-rec t-rec_pt_60 t-rec_pb_75" style="padding-top:60px;padding-bottom:75px; " data-animationappear="off" data-record-type="3" ><!-- T107 --><div class="t107"><div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3639-3838-4263-a235-663165316339__noroot.png"> <img class="t107__widthauto t-img" 
+src="images/tild3639-3838-4263-a235-663165316339__-__empty__noroot.png" data-original="images/tild3639-3838-4263-a235-663165316339__noroot.png" 
+imgfield="img"
+alt=""></div></div></div><div id="rec570938725" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 22px; line-height: 38px;" data-customstyle="yes"><strong>Кровеносная система</strong>, также называемая сердечно-сосудистой системой, — это жизненно важная система органов, которая доставляет необходимые вещества ко всем клеткам для осуществления основных функций. Cердечно-сосудистая система представляет собой сеть, состоящую из сердца как централизованного насоса, кровеносных сосудов, распределяющих кровь по всему телу, и самой крови для транспортировки различных веществ.<br /><br />Кровеносная система разделена на два отдельных круга: более короткий легочный круг, который обменивает кровь между сердцем и легкими для насыщения кислородом; и более длинный системный круг, который распределяет кровь по всем другим системам и тканям организма. Оба эти круга начинаются и заканчиваются в сердце.<br /><br /></div></div></div></div></div></div><div id="rec570964905" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-animationappear="off" data-record-type="3" ><!-- T107 --><div class="t107"><div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3337-6639-4532-b438-626334323762__noroot.png"> <img class="t107__widthauto t-img" 
+src="images/tild3337-6639-4532-b438-626334323762__-__empty__noroot.png" data-original="images/tild3337-6639-4532-b438-626334323762__noroot.png" 
+imgfield="img"
+alt=""></div></div></div><div id="rec570960024" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 22px; line-height: 38px;" data-customstyle="yes">Основная функция кровеносной (или сердечно-сосудистой) системы заключается в доставке кислорода к тканям организма и одновременном удалении углекислого газа, образующегося в результате обмена веществ. Кислород связан с молекулами, называемыми гемоглобином, которые находятся на поверхности красных кровяных телец в крови.<br /><br />Начиная от сердца, дезоксигенированная кровь (содержащая углекислый газ) возвращается из системной циркуляции в правую половину сердца. Она перекачивается в легочную циркуляцию и доставляется в легкие, где происходит газообмен. Углекислый газ удаляется из крови и заменяется кислородом. Теперь кровь насыщена кислородом и возвращается в левую часть сердца.<br /><br />Оттуда она перекачивается в системный кровоток, доставляет кислород к тканям и снова возвращается в правую половину сердца. Кровь также служит отличной транспортной средой для питательных веществ, таких как электролиты, а также гормонов. Кроме того, кровь транспортирует отработанные продукты, которые фильтруются из крови в печени.<br /><br /></div></div></div></div></div></div></div><!--/allrecords-->
